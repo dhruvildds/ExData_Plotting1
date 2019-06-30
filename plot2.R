@@ -16,5 +16,5 @@ hpc$dt<-as.POSIXlt(hpc$dt,format="%Y-%m-%d %H:%M:%S")
 
 ##generating the required plot
 png(file="./plot2.png",width=480,height=480)
-with(hpc,plot(sort(hpc$dt),hpc[,"Global_active_power"],type="l",xlab="",ylab="Global Reactive Power (kilowatts)"))
+with(hpc,plot(sort(hpc$dt),hpc[,"Global_active_power"],type="l",xlab="",ylab="Global Active Power (kilowatts)"))
 dev.off()
